@@ -1,4 +1,4 @@
-package com.arra.algorithm.collection;
+package com.arra.algorithm.uionfind;
 
 /**
  * componets: 
