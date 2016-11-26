@@ -25,7 +25,7 @@ public class Graph {
 	 * @param in
 	 */
 	public Graph(InputStream in) {
-		
+		this.V = 0;
 	}
 	
 	/**
