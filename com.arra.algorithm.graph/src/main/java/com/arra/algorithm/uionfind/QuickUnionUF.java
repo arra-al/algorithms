@@ -7,6 +7,8 @@ package com.arra.algorithm.uionfind;
  * 		0	1	2	3	4	5	6	7	8	9
  * id[] 0	1	9	4	9	6	6	7	8	9
  * 
+ * root(3) = root(4) = root(9) = 9
+ * 
  * connected(p, q): if root(p) == root(q)
  * union(p, q): to merge components containing p and q, set id of p's root to the id of q's root
  * 
@@ -14,7 +16,7 @@ package com.arra.algorithm.uionfind;
  *
  */
 public class QuickUnionUF extends UF{
-	private int[] id;
+	protected int[] id;
 	
 	public QuickUnionUF(int N) {
 		super(N);
@@ -30,7 +32,7 @@ public class QuickUnionUF extends UF{
 	 * @param i
 	 * @return
 	 */
-	private int root(int i) {
+	protected int root(int i) {
 		while(i != id[i]) {
 			i = id[i];
 		}
