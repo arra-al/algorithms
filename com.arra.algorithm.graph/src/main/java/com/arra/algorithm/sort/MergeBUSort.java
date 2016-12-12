@@ -1,7 +1,10 @@
 package com.arra.algorithm.sort;
 
 /**
- * Bottom-up mergesort
+ * Bottom-up mergesort (no recursion needed)
+ * 
+ * Pass through array, merging subarrays of size 1
+ * Repeat for subarrays of size 2, 4, 8, 16 ...
  * 
  * @author Gezimi
  *
